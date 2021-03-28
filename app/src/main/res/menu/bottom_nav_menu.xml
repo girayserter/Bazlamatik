@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_kisi_listesi"
+        android:icon="@drawable/ic_kisi_listesi_black_24dp"
+        android:title="@string/title_kisi_listesi" />
+
+    <item
+        android:id="@+id/navigation_masalar"
+        android:icon="@drawable/ic_masalar_black_24dp"
+        android:title="@string/title_masalar" />
+
+    <item
+        android:id="@+id/navigation_rapor"
+        android:icon="@drawable/ic_rapor_black_24dp"
+        android:title="@string/title_rapor" />
+
+</menu>

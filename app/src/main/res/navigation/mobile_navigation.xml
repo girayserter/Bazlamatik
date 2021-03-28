@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_kisi_listesi">
+
+    <fragment
+        android:id="@+id/navigation_kisi_listesi"
+        android:name="com.bazlamatik.app.ui.kisiListesi.KisiListesiFragment"
+        android:label="@string/title_kisi_listesi"
+        tools:layout="@layout/fragment_kisi_listesi" />
+
+    <fragment
+        android:id="@+id/navigation_masalar"
+        android:name="com.bazlamatik.app.ui.masalar.MasalarFragment"
+        android:label="@string/title_masalar"
+        tools:layout="@layout/fragment_masalar" />
+
+    <fragment
+        android:id="@+id/navigation_rapor"
+        android:name="com.bazlamatik.app.ui.rapor.RaporFragment"
+        android:label="@string/title_rapor"
+        tools:layout="@layout/fragment_rapor" />
+</navigation>

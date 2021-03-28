@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bazlamatik</string>
+    <string name="title_activity_anasayfa">Bazlamatik</string>
+    <string name="title_kisi_listesi">Kişi Listesi</string>
+    <string name="title_masalar">Masalar</string>
+    <string name="title_rapor">Rapor</string>
+</resources>
