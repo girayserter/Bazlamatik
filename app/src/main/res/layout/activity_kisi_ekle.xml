@@ -6,88 +6,107 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kişi Ekle"
-        android:textSize="40sp"
-        android:textColor="@color/primarytext"
-        android:gravity="center_horizontal"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="İsim"
-        android:textSize="40sp"
-        android:textColor="@color/primarytext"
-        android:gravity="center_horizontal"/>
-    <EditText
-        android:id="@+id/txt_isim"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kişi Sayısı"
-        android:textSize="40sp"
-        android:textColor="@color/primarytext"
-        android:gravity="center_horizontal"/>
-    <EditText
-        android:id="@+id/txt_kisi_sayisi"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        android:inputType="number"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Telefon"
-        android:textSize="40sp"
-        android:textColor="@color/primarytext"
-        android:gravity="center_horizontal"/>
-    <EditText
-        android:id="@+id/txt_telefon"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Not"
-        android:textSize="40sp"
-        android:textColor="@color/primarytext"
-        android:gravity="center_horizontal"/>
-    <EditText
-        android:id="@+id/txt_not"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_kaydet"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/secondary"
-            android:text="Kaydet"
-            android:textColor="@color/primarytext"
-            android:layout_weight="1"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KİŞİ EKLE"
+                android:textSize="60sp"
+                android:textColor="@color/primarytext"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İsim"
+                android:textSize="40sp"
+                android:textColor="@color/primarytext"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/txt_isim"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kişi Sayısı"
+                android:textSize="40sp"
+                android:textColor="@color/primarytext"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/txt_kisi_sayisi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefon"
+                android:textSize="40sp"
+                android:textColor="@color/primarytext"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/txt_telefon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not"
+                android:textSize="40sp"
+                android:textColor="@color/primarytext"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/txt_not"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"/>
 
-        <Button
-            android:id="@+id/btn_iptal"
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/secondary"
-            android:text="İptal"
-            android:textColor="@color/primarytext"
-            android:layout_weight="1"
-            />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+            <Button
+                android:id="@+id/btn_kaydet"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/secondary"
+                android:text="Kaydet"
+                android:textColor="@color/primarytext"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"/>
+
+            <Button
+                android:id="@+id/btn_iptal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/secondary"
+                android:text="İptal"
+                android:textColor="@color/primarytext"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
+
     </LinearLayout>
+
+
+
+
 
 
 
