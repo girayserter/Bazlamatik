@@ -83,10 +83,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //kisi silme
-    public Integer kisiSil(String column_name, String thingToDelete){
+    public Integer kisiSil(int id){
         SQLiteDatabase db= this.getWritableDatabase();
         int result;
-        result= db.delete(KISILER_TABLE,column_name+"='" + thingToDelete +"' ;", null);
+        result= db.delete(KISILER_TABLE,ID+"=" + id +" ;", null);
         return result;
     }
 
@@ -98,10 +98,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void kisiGuncelle(int id,String kisi_Adi,String kisi_Sayisi, String timestamp, String telefon, String note){
+    public void kisiGuncelle(int id,String kisi_Adi,String kisi_Sayisi, String telefon, String note){
         SQLiteDatabase db= this.getWritableDatabase();
-        String query = "UPDATE "+KISILER_TABLE+" SET "+Kisi_Adi+" = '"+kisi_Adi+ "',"+Kisi_Sayisi+" = '"+kisi_Sayisi+ "',"+Timestamp+" = "+timestamp+ ","+Telefon+" = "+telefon+ ","+Note+" = '"+note+ "',  WHERE "+ID+" = "+ id;
+        String query = "UPDATE "+KISILER_TABLE+" SET "+Kisi_Adi+" = '"+kisi_Adi+ "',"+Kisi_Sayisi+" = '"+kisi_Sayisi+ "',"+Telefon+" = '"+telefon+ "',"+Note+" = '"+note+ "'  WHERE "+ID+" = "+ id;
         db.execSQL(query);
+    }
+
+    public KisiDetay kisiDetayAl(int id){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + KISILER_TABLE + " WHERE " + ID + "=" + id,null);
+        cursor.moveToFirst();
+
+        //setting related user info in User Object
+        KisiDetay kisi = new KisiDetay();
+        kisi.setId(cursor.getInt(cursor.getColumnIndex(ID)));
+        kisi.setIsim(cursor.getString(cursor.getColumnIndex(Kisi_Adi)));
+        kisi.setKisiSayisi(cursor.getString(cursor.getColumnIndex(Kisi_Sayisi)));
+        kisi.setTelefon(cursor.getString(cursor.getColumnIndex(Telefon)));
+        kisi.setNot(cursor.getString(cursor.getColumnIndex(Note)));
+
+        //close cursor & database
+        cursor.close();
+
+        return kisi;
+
     }
 
 }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import com.bazlamatik.app.DatabaseHelper;
 import com.bazlamatik.app.R;
 import com.bazlamatik.app.ui.Kisi;
+import com.bazlamatik.app.ui.KisiDetayActivity;
 import com.bazlamatik.app.ui.KisiEkleActivity;
 import com.bazlamatik.app.ui.KisiListesiAdapter;
 
@@ -66,6 +68,20 @@ public class KisiListesiFragment extends Fragment {
             }
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                Kisi kisi=(Kisi)listView.getAdapter().getItem(position);
+                int LAUNCH_SECOND_ACTIVITY = 2;
+                Intent i = new Intent(getActivity(), KisiDetayActivity.class);
+                i.putExtra("id",kisi.getId());
+                startActivityForResult(i, LAUNCH_SECOND_ACTIVITY);
+            }
+        });
+
+
+
         return root;
     }
 
@@ -74,6 +90,15 @@ public class KisiListesiFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 1) {
+            if(resultCode == Activity.RESULT_OK){
+                kisiler.clear();
+                viewData();
+            }
+            if (resultCode == Activity.RESULT_CANCELED) {
+
+            }
+        }
+        else if(requestCode==2){
             if(resultCode == Activity.RESULT_OK){
                 kisiler.clear();
                 viewData();
@@ -95,7 +120,7 @@ public class KisiListesiFragment extends Fragment {
         //veri varsa Array list e ekleme
         else{
             while (cursor.moveToNext()){
-                kisiler.add(new Kisi(cursor.getString(1),cursor.getString(2),cursor.getString(3)));
+                kisiler.add(new Kisi(cursor.getInt(0),cursor.getString(1),cursor.getString(2),cursor.getString(3)));
             }
             //Arraylist i listview e uyarlayan adapter
 

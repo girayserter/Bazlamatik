@@ -48,6 +48,7 @@ public class KisiListesiAdapter extends ArrayAdapter<Kisi> {
             convertView = inflater.inflate(R.layout.list_item, null);
 
             holder = new ViewHolder();
+            holder.kisiId = (TextView) convertView.findViewById(R.id.kisi_id);
             holder.kisiIsim = (TextView) convertView.findViewById(R.id.kisi_isim);
             holder.kisiSayisi = (TextView) convertView.findViewById(R.id.kisi_sayisi);
             holder.kisiSure = (TextView) convertView.findViewById(R.id.kisi_sure);
@@ -61,6 +62,7 @@ public class KisiListesiAdapter extends ArrayAdapter<Kisi> {
 
         Kisi person = persons.get(position);
         if(person != null){
+            holder.kisiId.setText(Integer.toString(person.getId()));
             holder.kisiIsim.setText(person.getIsim());
             holder.kisiSayisi.setText(person.getKisiSayisi());
             holder.kisiSure.setText(person.getTimestamp());
@@ -74,6 +76,7 @@ public class KisiListesiAdapter extends ArrayAdapter<Kisi> {
         TextView kisiSayisi;
         TextView kisiSure;
         TextView kisiIsim;
+        TextView kisiId;
 
     }
 }
