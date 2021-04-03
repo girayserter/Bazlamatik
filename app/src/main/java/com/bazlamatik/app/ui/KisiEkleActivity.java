@@ -9,8 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.bazlamatik.app.DatabaseHelper;
 import com.bazlamatik.app.R;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class KisiEkleActivity extends AppCompatActivity {
 
@@ -20,11 +25,14 @@ public class KisiEkleActivity extends AppCompatActivity {
     EditText kisiSayisi;
     EditText telefon;
     EditText not;
+    DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kisi_ekle);
+
+        db=new DatabaseHelper(this);
 
         kaydet=findViewById(R.id.btn_kaydet);
         iptal=findViewById(R.id.btn_iptal);
@@ -59,6 +67,12 @@ public class KisiEkleActivity extends AppCompatActivity {
                     returnIntent.putExtra("telefon",telefon.getText().toString());
                     returnIntent.putExtra("not",not.getText().toString());
                     setResult(Activity.RESULT_OK,returnIntent);
+                    SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss");
+                    String timestamp = s.format(new Date());
+                    if(db.insertKisi(isim.getText().toString(),kisiSayisi.getText().toString(),timestamp,telefon.getText().toString(),not.getText().toString()))
+                    {
+                        Toast.makeText(KisiEkleActivity.this,"Kişi Eklendi",Toast.LENGTH_SHORT).show();
+                    }
                     finish();
                 }
             }

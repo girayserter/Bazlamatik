@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bazlamatik">
-        <activity android:name=".ui.KisiEkleActivity"></activity>
+        <activity android:name=".ui.KisiDetayActivity"></activity>
+        <activity android:name=".ui.KisiEkleActivity" />
         <activity
             android:name=".AnasayfaActivity"
             android:label="@string/title_activity_anasayfa">
