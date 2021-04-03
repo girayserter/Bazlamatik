@@ -48,19 +48,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@color/white"
-                android:inputType="number"/>
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Telefon"
                 android:textSize="40sp"
                 android:textColor="@color/primarytext"
-                android:gravity="left"/>
+                android:gravity="left"
+                />
             <EditText
                 android:id="@+id/txt_telefon"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@color/white"/>
+                android:background="@color/white"
+                android:inputType="number"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

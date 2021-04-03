@@ -100,6 +100,7 @@ public class KisiListesiFragment extends Fragment {
         }
         else if(requestCode==2){
             if(resultCode == Activity.RESULT_OK){
+                listView.setAdapter(null);
                 kisiler.clear();
                 viewData();
             }

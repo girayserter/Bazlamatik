@@ -1,472 +1,541 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            >
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btn_sube1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
                 android:background="@color/primary"
                 android:text="Şube 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="30dp"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="5dp"/>
+                android:textColor="@color/primarytext" />
+
             <Button
                 android:id="@+id/btn_sube2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
                 android:background="@color/primary"
                 android:text="Şube 2"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="30dp"
+                android:textColor="@color/primarytext" />
+
+            <Button
+                android:id="@+id/btn_sube4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:layout_marginHorizontal="5dp"/>
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/primary"
+                android:text="Şube 3"
+                android:textColor="@color/primarytext" />
+
+            <Button
+                android:id="@+id/btn_sube5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/primary"
+                android:text="Şube 4"
+                android:textColor="@color/primarytext" />
+
             <Button
                 android:id="@+id/btn_sube3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Şube 3"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="30dp"
+                android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:layout_marginHorizontal="5dp"/>
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/primary"
+                android:text="Şube 5"
+                android:textColor="@color/primarytext" />
         </LinearLayout>
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_gravity="center"
             android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginVertical="2dp"
-                android:layout_gravity="center"
-                android:layout_weight="1">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="2dp"
-            android:layout_gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            </LinearLayout>
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="2dp"
-            android:layout_gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="2dp"
-            android:layout_gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="2dp"
-            android:layout_gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="@color/primary"
-                android:text="Masa 1"
-                android:textColor="@color/primarytext"
-                android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="10dp"
-                android:autoSizeMaxTextSize="20dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_weight="1"/>
-        </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginVertical="2dp"
-                android:layout_gravity="center"
-                android:layout_weight="1">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:background="@color/primary"
-                    android:text="Masa 1"
-                    android:textColor="@color/primarytext"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMinTextSize="10dp"
-                    android:autoSizeMaxTextSize="20dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1"/>
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
                         android:background="@color/primary"
                         android:text="Masa 1"
-                        android:textColor="@color/primarytext"
-                        android:autoSizeTextType="uniform"
-                        android:autoSizeMinTextSize="10dp"
-                        android:autoSizeMaxTextSize="20dp"
-                        android:layout_marginHorizontal="5dp"
-                        android:layout_weight="1"/>
+                        android:textColor="@color/primarytext" />
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
                         android:background="@color/primary"
                         android:text="Masa 1"
-                        android:textColor="@color/primarytext"
-                        android:autoSizeTextType="uniform"
-                        android:autoSizeMinTextSize="10dp"
-                        android:autoSizeMaxTextSize="20dp"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_marginHorizontal="5dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeMinTextSize="10dp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/primary"
+                        android:text="Masa 1"
+                        android:textColor="@color/primarytext" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
+
+        </ScrollView>
+
+
     </LinearLayout>
 </RelativeLayout>
